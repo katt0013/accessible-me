@@ -1,3 +1,6 @@
+
+
+
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: grey;
@@ -14,7 +17,7 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
-.container {
+header,footer,main  {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -24,7 +27,7 @@ img {
   width: 100%;
 }
 
-.main-nav ul {
+nav ul, footer li {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -32,17 +35,24 @@ img {
   padding: 0;
 }
 
-.main-nav ul li {
+nav ul li {
   flex: 1;
   text-align: center;
 }
 
-.main-nav ul li a {
+nav ul li a {
   display: block;
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
 }
+nav ul li a:hover {            
+  background-color:rgb(21, 145, 31);
+  padding-top: 70px;
+  font-size: x-large;
+  color: rgb(185, 185, 95);
+  }
+  
 
 form input,
 form textarea {
@@ -64,8 +74,10 @@ form button {
   border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
+  background-color: aquamarine;
 }
 
-.site-footer {
+footer {
   padding: 2rem 0;
 }
+
